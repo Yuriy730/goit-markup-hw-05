@@ -92,13 +92,12 @@ img {
   font-weight: 500;
   color: var(--title-text-color);
   padding-bottom: auto;
-  
+  transition: 250ms var(--timing-function);
 }
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--accent-color);
-  transition: opacity 250ms var(--timing-function);
 }
 .navigation-list-link::after {
   position: absolute;
@@ -115,9 +114,8 @@ img {
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
 }
-}
 
-/* contacts */
+/*================CONTACTS================== */
 
 .address {
   display: flex;
@@ -142,6 +140,7 @@ img {
   letter-spacing: 0.02em;
   margin-left: 305px;
   color: var(--primery-text-color);
+  transition: 250ms var(--timing-function);
 }
 .address-cont .address-mail:hover,
 .address-cont .address-mail:focus {
@@ -163,6 +162,7 @@ img {
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--primery-text-color);
+  transition: 250ms var(--timing-function);
 }
 .address-cont .address-tel:hover,
 .address-cont .address-tel:focus {
@@ -173,7 +173,6 @@ img {
 /*=============== Hero =================*/
 
 .hero {
-  
   background-color: #2f303a;
   background-image: linear-gradient(
       to right,
@@ -216,7 +215,6 @@ img {
   outline: none;
   cursor: pointer;
 }
-
 
 /*============== features =============*/
 .features {
@@ -270,6 +268,32 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.duties-element {
+  position: relative;
+}
+.field-label {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+.duties-label {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
 
 /*=============portfolio===============*/
 .service {
@@ -300,6 +324,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   transform: rotate(-0.72deg);
+  transition: 250ms var(--timing-function);
 }
 
 .service .button-item:hover,
@@ -378,6 +403,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: 250ms var(--timing-function);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -422,6 +448,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--primery-grey-color);
+  transition: 250ms var(--timing-function);
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -450,6 +477,7 @@ img {
   margin-left: 26px;
   margin-top: 26px;
   border: 1px solid #ececec;
+  transition: 250ms var(--timing-function);
 }
 .project > .project-list:hover,
 .project > .project-list:focus {
@@ -458,6 +486,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .project-title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -478,6 +507,31 @@ img {
 .text-box {
   padding: 30px 24px;
   color: var(--primery-text-color);
+}
+.project-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--primery-white-color);
+  transform: translateY(100%);
+  transition: all 250ms var(--timing-function);
+}
+.project-list-link:hover .overlay,
+.project-list-link:focus .overlay {
+  transform: translateY(0%);
 }
 /*==============FOOTER================*/
 .footer {
@@ -526,6 +580,7 @@ img {
   line-height: 1.143px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: 250ms var(--timing-function);
 }
 .address-tube .address-mail-unit:hover,
 .address-tube .address-mail-unit:focus {
@@ -536,8 +591,7 @@ img {
 .address-tube .address-tel-unit:focus {
   color: var(--accent-color);
 }
-.social-web {
-}
+/*============MODAL-WINDOW==============*/
 .slogan-web {
   display: flex;
   margin-bottom: 20px;
@@ -559,10 +613,12 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms var(--timing-function);
 }
 .social-web-list-link:hover,
 .social-web-list-link:focus {
   background-color: var(--accent-color);
+  transition: 250ms var(--timing-function);
 }
 .social-web-list-link:hover > .social-list-icon,
 .social-web-list-link:focus > .social-list-icon {
@@ -592,11 +648,11 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
 
 .close-black {
   position: absolute;
@@ -615,7 +671,6 @@ img {
   height: 18px;
   top: 20%;
   right: 20%;
-  
 }
 .is-hidden {
   opacity: 0;
