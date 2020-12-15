@@ -49,6 +49,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 /*==========UTILITIES=========*/
 
 /*==========HEADER==========*/
@@ -94,10 +95,18 @@ img {
   padding-bottom: auto;
   transition: 250ms var(--timing-function);
 }
-
+.navigation .navigation-list-link.current {
+  color: var(--accent-color);
+}
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--accent-color);
+}
+.current::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
 }
 .navigation-list-link::after {
   position: absolute;
